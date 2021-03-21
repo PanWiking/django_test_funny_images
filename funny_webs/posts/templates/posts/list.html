@@ -7,7 +7,7 @@
 <body>
 {% for item in posts%}
 <div>Title:{{item.title}}</div>
-<video name="{{item.title}}" width="320" controls autoplay>
+<video name="{{item.title}}" width="320" loop autoplay controls  muted>
     <source src="{{item.web.url}}" type='video/mp4'>
     Your browser does not support the video tag.
 </video>
